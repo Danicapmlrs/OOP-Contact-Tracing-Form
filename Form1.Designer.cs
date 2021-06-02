@@ -86,19 +86,20 @@ namespace OOP_Contact_Tracing_Form
             // btn_next
             // 
             this.btn_next.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_next.Location = new System.Drawing.Point(369, 658);
+            this.btn_next.Location = new System.Drawing.Point(368, 663);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(94, 29);
             this.btn_next.TabIndex = 4;
             this.btn_next.Text = "NEXT";
             this.btn_next.UseVisualStyleBackColor = true;
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // FormInst
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(531, 452);
+            this.ClientSize = new System.Drawing.Size(491, 736);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_Inst);
