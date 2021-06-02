@@ -99,7 +99,7 @@ namespace OOP_Contact_Tracing_Form
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(491, 736);
+            this.ClientSize = new System.Drawing.Size(491, 503);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_Inst);

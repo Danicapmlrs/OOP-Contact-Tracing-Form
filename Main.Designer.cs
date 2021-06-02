@@ -42,6 +42,8 @@ namespace OOP_Contact_Tracing_Form
             this.tb_address = new System.Windows.Forms.TextBox();
             this.tb_number = new System.Windows.Forms.TextBox();
             this.tb_email = new System.Windows.Forms.TextBox();
+            this.btn_reset = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_name
@@ -152,11 +154,32 @@ namespace OOP_Contact_Tracing_Form
             this.tb_email.Size = new System.Drawing.Size(377, 31);
             this.tb_email.TabIndex = 11;
             // 
+            // btn_reset
+            // 
+            this.btn_reset.Location = new System.Drawing.Point(24, 395);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(94, 29);
+            this.btn_reset.TabIndex = 12;
+            this.btn_reset.Text = "RESET";
+            this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(507, 395);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "DONE";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(631, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.tb_email);
             this.Controls.Add(this.tb_number);
             this.Controls.Add(this.tb_address);
@@ -192,5 +215,7 @@ namespace OOP_Contact_Tracing_Form
         private System.Windows.Forms.TextBox tb_address;
         private System.Windows.Forms.TextBox tb_number;
         private System.Windows.Forms.TextBox tb_email;
+        private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.Button button1;
     }
 }
