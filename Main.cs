@@ -31,8 +31,13 @@ namespace OOP_Contact_Tracing_Form
         private void btn_done_Click(object sender, EventArgs e)
         {
             formSubmit();
-            MessageBox.Show("Your information is saved. Thank you");
-            Application.Exit();
+            MessageBox.Show("Your information is saved. To view information, please press READ button. Thank you");
+            tb_name.Text = "";
+            tb_gender.Text = "";
+            tb_age.Text = "";
+            tb_address.Text = "";
+            tb_number.Text = "";
+            tb_email.Text = "";
         }
 
         private void formSubmit()
@@ -56,7 +61,10 @@ namespace OOP_Contact_Tracing_Form
         }
         private void btn_read_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Please make sure you press DONE before pressing read to see your information");
+            this.Hide();
+            Read mainform2 = new Read();
+            mainform2.Show();
         }
     }
 }
