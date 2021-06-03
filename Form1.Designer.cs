@@ -78,7 +78,7 @@ namespace OOP_Contact_Tracing_Form
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(35, 456);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(393, 184);
+            this.label2.Size = new System.Drawing.Size(377, 207);
             this.label2.TabIndex = 3;
             this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -86,7 +86,7 @@ namespace OOP_Contact_Tracing_Form
             // btn_next
             // 
             this.btn_next.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_next.Location = new System.Drawing.Point(368, 663);
+            this.btn_next.Location = new System.Drawing.Point(371, 676);
             this.btn_next.Name = "btn_next";
             this.btn_next.Size = new System.Drawing.Size(94, 29);
             this.btn_next.TabIndex = 4;
@@ -99,7 +99,7 @@ namespace OOP_Contact_Tracing_Form
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(491, 503);
+            this.ClientSize = new System.Drawing.Size(492, 450);
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_Inst);
