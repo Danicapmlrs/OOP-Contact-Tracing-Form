@@ -53,6 +53,9 @@ namespace OOP_Contact_Tracing_Form
             ContactTraceForm.WriteLine(lbl_email.Text);
             ContactTraceForm.WriteLine(tb_email.Text);
             ContactTraceForm.Close();
+        }
+        private void btn_read_Click(object sender, EventArgs e)
+        {
 
         }
     }
