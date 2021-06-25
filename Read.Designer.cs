@@ -31,6 +31,7 @@ namespace OOP_Contact_Tracing_Form
         {
             this.tb_read = new System.Windows.Forms.TextBox();
             this.btn_okay = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // tb_read
@@ -53,6 +54,11 @@ namespace OOP_Contact_Tracing_Form
             this.btn_okay.UseVisualStyleBackColor = true;
             this.btn_okay.Click += new System.EventHandler(this.btn_okay_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
             // Read
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -63,6 +69,7 @@ namespace OOP_Contact_Tracing_Form
             this.MaximizeBox = false;
             this.Name = "Read";
             this.Text = "Read Information";
+            this.Load += new System.EventHandler(this.Read_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,5 +79,6 @@ namespace OOP_Contact_Tracing_Form
 
         private System.Windows.Forms.TextBox tb_read;
         private System.Windows.Forms.Button btn_okay;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

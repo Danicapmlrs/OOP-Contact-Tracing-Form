@@ -100,6 +100,7 @@ namespace OOP_Contact_Tracing_Form
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(492, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_next);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_Inst);

@@ -1,7 +1,7 @@
 ﻿
 namespace OOP_Contact_Tracing_Form
 {
-    partial class Main
+    partial class mainform
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace OOP_Contact_Tracing_Form
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainform));
             this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_gender = new System.Windows.Forms.Label();
             this.lbl_age = new System.Windows.Forms.Label();
@@ -45,6 +45,8 @@ namespace OOP_Contact_Tracing_Form
             this.btn_reset = new System.Windows.Forms.Button();
             this.btn_done = new System.Windows.Forms.Button();
             this.btn_read = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // lbl_name
@@ -185,6 +187,16 @@ namespace OOP_Contact_Tracing_Form
             this.btn_read.UseVisualStyleBackColor = true;
             this.btn_read.Click += new System.EventHandler(this.btn_read_Click);
             // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "txt";
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.DefaultExt = "txt";
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -231,5 +243,7 @@ namespace OOP_Contact_Tracing_Form
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.Button btn_done;
         private System.Windows.Forms.Button btn_read;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

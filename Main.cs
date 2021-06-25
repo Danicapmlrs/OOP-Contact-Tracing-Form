@@ -9,12 +9,14 @@ using System.Windows.Forms;
 
 namespace OOP_Contact_Tracing_Form
 {
-    public partial class Main : Form
+    public partial class mainform : Form
     {
-        public Main()
+        public mainform()
         {
             InitializeComponent();
         }
+
+        public string ContactTracef;
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
@@ -30,7 +32,7 @@ namespace OOP_Contact_Tracing_Form
 
         private void btn_done_Click(object sender, EventArgs e)
         {
-            formSubmit();
+            saveFileDialog1.ShowDialog();
             MessageBox.Show("Your information is saved. To view information, please press READ button. Thank you");
             tb_name.Text = "";
             tb_gender.Text = "";
@@ -40,10 +42,17 @@ namespace OOP_Contact_Tracing_Form
             tb_email.Text = "";
         }
 
-        private void formSubmit()
+        private void btn_read_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Please make sure you press DONE before pressing read to see your information");
+            Read mainform2 = new Read();
+            mainform2.Show();
+        }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             StreamWriter ContactTraceForm;
-            ContactTraceForm = File.AppendText(@"C:\Users\user\Documents\CovidTraceForm.txt");
+            ContactTraceForm = File.AppendText(saveFileDialog1.FileName);
             ContactTraceForm.WriteLine("~~~~~~~~~~~");
             ContactTraceForm.WriteLine(lbl_name.Text);
             ContactTraceForm.WriteLine(tb_name.Text);
@@ -58,12 +67,6 @@ namespace OOP_Contact_Tracing_Form
             ContactTraceForm.WriteLine(lbl_email.Text);
             ContactTraceForm.WriteLine(tb_email.Text);
             ContactTraceForm.Close();
-        }
-        private void btn_read_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Please make sure you press DONE before pressing read to see your information");
-            Read mainform2 = new Read();
-            mainform2.Show();
         }
     }
 }

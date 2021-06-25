@@ -25,7 +25,7 @@ namespace OOP_Contact_Tracing_Form
         private void btn_next_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Main mainform = new Main();
+            mainform mainform = new mainform();
             mainform.Show();
         }
     }
