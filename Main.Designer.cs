@@ -114,6 +114,7 @@ namespace OOP_Contact_Tracing_Form
             this.tb_name.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tb_name.Location = new System.Drawing.Point(224, 36);
             this.tb_name.Name = "tb_name";
+            this.tb_name.PlaceholderText = "-Please enter complete name-";
             this.tb_name.Size = new System.Drawing.Size(377, 31);
             this.tb_name.TabIndex = 6;
             // 
@@ -122,6 +123,7 @@ namespace OOP_Contact_Tracing_Form
             this.tb_gender.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tb_gender.Location = new System.Drawing.Point(224, 87);
             this.tb_gender.Name = "tb_gender";
+            this.tb_gender.PlaceholderText = "-Please enter female/f or male/m-";
             this.tb_gender.Size = new System.Drawing.Size(377, 31);
             this.tb_gender.TabIndex = 7;
             // 
@@ -130,6 +132,7 @@ namespace OOP_Contact_Tracing_Form
             this.tb_age.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tb_age.Location = new System.Drawing.Point(224, 142);
             this.tb_age.Name = "tb_age";
+            this.tb_age.PlaceholderText = "-Please enter age-";
             this.tb_age.Size = new System.Drawing.Size(377, 31);
             this.tb_age.TabIndex = 8;
             // 
@@ -138,6 +141,7 @@ namespace OOP_Contact_Tracing_Form
             this.tb_address.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tb_address.Location = new System.Drawing.Point(224, 195);
             this.tb_address.Name = "tb_address";
+            this.tb_address.PlaceholderText = "-Please enter complete address-";
             this.tb_address.Size = new System.Drawing.Size(377, 31);
             this.tb_address.TabIndex = 9;
             // 
@@ -146,6 +150,7 @@ namespace OOP_Contact_Tracing_Form
             this.tb_number.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tb_number.Location = new System.Drawing.Point(224, 250);
             this.tb_number.Name = "tb_number";
+            this.tb_number.PlaceholderText = "-Please enter home address-";
             this.tb_number.Size = new System.Drawing.Size(377, 31);
             this.tb_number.TabIndex = 10;
             // 
@@ -154,6 +159,7 @@ namespace OOP_Contact_Tracing_Form
             this.tb_email.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tb_email.Location = new System.Drawing.Point(224, 309);
             this.tb_email.Name = "tb_email";
+            this.tb_email.PlaceholderText = "-Please put NA if you have no email address-";
             this.tb_email.Size = new System.Drawing.Size(377, 31);
             this.tb_email.TabIndex = 11;
             // 
@@ -197,7 +203,7 @@ namespace OOP_Contact_Tracing_Form
             this.openFileDialog1.DefaultExt = "txt";
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // Main
+            // mainform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -219,7 +225,7 @@ namespace OOP_Contact_Tracing_Form
             this.Controls.Add(this.lbl_name);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Main";
+            this.Name = "mainform";
             this.Text = "Contact Tracing Form";
             this.ResumeLayout(false);
             this.PerformLayout();
