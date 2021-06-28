@@ -17,8 +17,7 @@ namespace OOP_Contact_Tracing_Form
         }
 
         public string ContactTracef;
-
-        private void btn_reset_Click(object sender, EventArgs e)
+        private void reset()
         {
             tb_name.Text = "";
             tb_gender.Text = "";
@@ -26,7 +25,11 @@ namespace OOP_Contact_Tracing_Form
             tb_address.Text = "";
             tb_number.Text = "";
             tb_email.Text = "";
+        }
 
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            reset();
             MessageBox.Show("Form was reset. Please input information again.","Reset");
         }
 
@@ -34,12 +37,7 @@ namespace OOP_Contact_Tracing_Form
         {
             saveFileDialog1.ShowDialog();
             MessageBox.Show("Your information is saved. To view information, please press READ button. Thank you");
-            tb_name.Text = "";
-            tb_gender.Text = "";
-            tb_age.Text = "";
-            tb_address.Text = "";
-            tb_number.Text = "";
-            tb_email.Text = "";
+            reset();
         }
 
         private void btn_read_Click(object sender, EventArgs e)
