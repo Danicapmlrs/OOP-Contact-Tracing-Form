@@ -44,7 +44,8 @@ namespace OOP_Contact_Tracing_Form
 
         private void btn_read_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please make sure you press DONE before pressing read to see your information");
+            MessageBox.Show("Please make sure you press DONE before pressing read to see your information and after clicking okay" +
+                " find the filename you entered awhile ago to view the information");
             Read mainform2 = new Read();
             mainform2.Show();
         }
